@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane Narrative Studios | Forge Your Legend</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a dark, fantasy aesthetic */
+        :root {
+            --color-primary: #8B5CF6; /* Violet-500 */
+            --color-secondary: #DC2626; /* Red-600 */
+            --color-dark: #0A0A0A;
+            --color-text-light: #F3F4F6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark);
+            color: var(--color-text-light);
+        }
+
+        /* Use Cinzel for display/hero text for a classic, epic feel */
+        .cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Hero section background for a dramatic, visual effect */
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), 
+                        url('https://placehold.co/1200x800/100010/8B5CF6?text=The+Arcane+Lore') center/cover no-repeat;
+            min-height: 80vh;
+        }
+
+        /* Custom glow effect for buttons */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.5); /* Violet glow */
+        }
+        .cta-button:hover {
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.8), 0 0 40px rgba(139, 92, 246, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Feature card hover effect */
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            border-color: var(--color-primary);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="p-4 md:p-6 bg-gray-900/90 border-b border-violet-900 fixed w-full z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold cinzel text-violet-400">ARCANE</h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+                <a href="#vision" class="hover:text-violet-400 transition">Our Vision</a>
+                <a href="#pillars" class="hover:text-violet-400 transition">Pillars</a>
+                <a href="#contact" class="hover:text-violet-400 transition">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden sm:block px-4 py-2 bg-violet-600 rounded-lg text-white font-bold hover:bg-violet-700 transition">Start Your Epic</a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section - Unique Value Proposition -->
+    <section id="hero" class="hero-bg flex items-center justify-center text-center pt-24 pb-16">
+        <div class="max-w-4xl p-8 rounded-xl backdrop-blur-sm bg-black/50 mx-4">
+            <h2 class="cinzel text-6xl md:text-8xl font-black mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-violet-400">
+                Forge Your Legend
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 font-light max-w-2xl mx-auto">
+                We are Arcane Narrative Studios: the architects of worlds, the weavers of deep, immersive fantasy lore that elevates your game, film, or novel into an immortal saga.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contact" class="cta-button px-10 py-4 bg-violet-600 text-white text-lg font-bold rounded-xl shadow-lg hover:bg-violet-700 transition duration-300">
+                    Request Lore Demo
+                </a>
+                <a href="#pillars" class="px-10 py-4 bg-gray-700/50 text-gray-200 text-lg font-bold rounded-xl border border-violet-500 hover:bg-gray-700 transition duration-300">
+                    Explore Our Pillars
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Our Vision -->
+    <section id="vision" class="py-20 md:py-28 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="cinzel text-4xl font-extrabold text-violet-400 mb-4">
+                        The Soul of the Project
+                    </h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        In a market saturated with generic fantasy, **Arcane Narrative Studios** commits to originality. We don't just build backstories; we design *ecosystems* where history, culture, and magic are inextricably linked. Our process is collaborative, ensuring the deep lore serves the ultimate goal of your project, creating player/reader attachment that lasts generations.
+                    </p>
+                    <ul class="mt-6 space-y-3 text-gray-300">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M10 12l2 2m0 0l2-2m-4 0l-2 2"></path></svg>Custom Magic Systems</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2h-1c-1.657 0-3 .895-3 2s1.343 2 3 2h1a2 2 0 002-2M9 10h.01M15 12h.01M9 14h.01M15 16h.01M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>100% IP Ownership</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-1.343 3-3s-1.343-3-3-3m0 6a3 3 0 100-6m-9 6h.01"></path></svg>Cross-Media Ready Lore Bibles</li>
+                    </ul>
+                </div>
+                <!-- Image placeholder mimicking the complex art -->
+                <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                    <img src="https://placehold.co/800x600/1E004B/F3F4F6?text=Concept+Art+Detail" 
+                         alt="Detailed Concept Art Placeholder" 
+                         class="w-full h-auto object-cover opacity-80 transition duration-500 hover:opacity-100"
+                         onerror="this.onerror=null;this.src='https://placehold.co/800x600/1E004B/F3F4F6?text=Concept+Art+Detail+Loading';"
+                         >
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 to-transparent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Key Features / Pillars -->
+    <section id="pillars" class="py-20 md:py-28 bg-gray-900 border-t border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="cinzel text-5xl font-extrabold mb-4 text-violet-500">
+                The Three Pillars of Arcane
+            </h3>
+            <p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+                Our approach is structured to deliver world-class narrative coherence from the ground up.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1: World-Building Architecture -->
+                <div class="feature-card p-6 rounded-xl bg-gray-800/50 border border-gray-700 transition duration-300">
+                    <div class="text-violet-500 mb-4 inline-block p-3 rounded-full bg-violet-900/40">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m0 0l-7 7m7-7v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold cinzel mb-2 text-white">World Architecture</h4>
+                    <p class="text-gray-400">
+                        Designing the geographical, political, and cultural framework. We define your maps, kingdoms, and history spanning millennia, ensuring a solid foundation for any story.
+                    </p>
+                </div>
+
+                <!-- Pillar 2: Character and Faction Design -->
+                <div class="feature-card p-6 rounded-xl bg-gray-800/50 border border-gray-700 transition duration-300">
+                    <div class="text-violet-500 mb-4 inline-block p-3 rounded-full bg-violet-900/40">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold cinzel mb-2 text-white">Legendary Characters</h4>
+                    <p class="text-gray-400">
+                        Creating memorable protagonists, complex antagonists, and deep, conflicting factions whose motivations drive the core narrative and game mechanics.
+                    </p>
+                </div>
+
+                <!-- Pillar 3: Interwoven Lore & Scripting -->
+                <div class="feature-card p-6 rounded-xl bg-gray-800/50 border border-gray-700 transition duration-300">
+                    <div class="text-violet-500 mb-4 inline-block p-3 rounded-full bg-violet-900/40">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold cinzel mb-2 text-white">Narrative Flow</h4>
+                    <p class="text-gray-400">
+                        From branching dialogue trees to epic cinematic scripts, we ensure every interaction reinforces the world's lore without overwhelming the player or reader.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Call to Action / Contact Form -->
+    <section id="contact" class="py-20 md:py-28 bg-gray-950">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <h3 class="cinzel text-5xl font-extrabold mb-4 text-red-500">
+                Ready to Start Your Saga?
+            </h3>
+            <p class="text-xl text-gray-400 mb-10">
+                A legendary world begins with a single conversation. Schedule a free consultation to discuss your vision.
+            </p>
+
+            <!-- Contact Form Mock-up -->
+            <form class="space-y-6 text-left p-8 bg-gray-800/50 rounded-xl shadow-2xl border border-violet-900">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name / Studio</label>
+                    <input type="text" id="name" placeholder="Arcane Narrative Studios" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:ring-violet-500 focus:border-violet-500" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Project Email</label>
+                    <input type="email" id="email" placeholder="contact@arcanestudios.com" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:ring-violet-500 focus:border-violet-500" required>
+                </div>
+                <div>
+                    <label for="project" class="block text-sm font-medium text-gray-300 mb-1">Project Type</label>
+                    <select id="project" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:ring-violet-500 focus:border-violet-500">
+                        <option value="">Select an option...</option>
+                        <option value="game">Video Game (AAA/Indie)</option>
+                        <option value="film">Film / Streaming Series</option>
+                        <option value="book">Novel / TTRPG</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Vision Summary</label>
+                    <textarea id="message" rows="4" placeholder="Briefly describe your epic fantasy world and needs..." class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:ring-violet-500 focus:border-violet-500" required></textarea>
+                </div>
+                <button type="submit" class="cta-button w-full px-6 py-4 bg-red-600 text-white text-xl font-bold rounded-xl hover:bg-red-700 transition duration-300">
+                    Send Us Your Quest
+                </button>
+            </form>
+            
+            <p class="mt-8 text-sm text-gray-500">
+                You can also reach us directly at: **lore@arcane-narrative.com**
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-8 bg-black border-t border-violet-900 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Arcane Narrative Studios. Architects of Immortal Worlds. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
